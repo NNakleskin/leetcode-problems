@@ -77,10 +77,6 @@ public:
     bool isValidBST(TreeNode* root) {
         int a, b, c;
         all.clear();
-        a = solve(root, root);
-        b =  solve2(root);
-        c = solve3();
-        std::cout << a << ' ' << b << ' ' << c << std::endl;
-        return a && b && c;
+        return solve(root, root)&& solve2(root) && solve3();
     }
 };
